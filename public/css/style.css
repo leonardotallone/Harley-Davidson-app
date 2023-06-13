@@ -1,0 +1,285 @@
+/* Custom Stylesheet */
+
+/* ---------------------- BACKGROUND VIDEO -----------------*/
+
+.Greeting{
+  color: white !important;
+  font-style: italic;
+  padding-top: 250px;
+  padding-left: 775px;
+  opacity: 80%;
+}
+.Greeting-Subtitle{
+  color: white !important;
+  font-style: italic;
+  padding-left: 965px;
+
+  opacity: 80%;
+
+}
+
+/* ---------------------- BACKGROUND VIDEO -----------------*/
+
+.responsive-video{
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* ------------------------------ NAVBAR ------------------*/
+
+/* Define tamaño y posicion del logo del navbar */
+.logo-img { 
+  max-height: 60px;
+  vertical-align: middle;
+}
+.avatar-nav {
+  cursor:pointer;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}
+
+/* Cambia el tamaño de la navbar y elimina el blur sobre sidenav cuando se achica la pantalla */
+.navbar-fixed {
+  z-index: 999; 
+  height:80px;
+}
+/* Cambia tamaño y color y psoicion del la navbar  */
+.nav-wrapper {
+  line-height:80px;
+  height: 80px;
+  background: rgb(0,0,0,0);
+  /* z-index: -1; */
+  box-shadow: none!important;
+}
+
+/* Posiciona los iconos dentro de la navbar  */
+.material-icons{
+  margin-top: 10px;
+ }
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+
+/* nav ul a,
+nav .brand-logo {
+  color: #444;
+} */
+
+/* p {
+  line-height: 2rem;
+} */
+
+
+/* ------------------------------ CARROUSEL  ------------------*/
+
+ /* Define la altura del carousel */
+/* .carousel{
+  height: 100px;
+} */
+
+/* Parametros de las imagenes del carousel  */
+.carousel-item >img{
+  width:auto;
+  height: 70%;
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+/* Fade effect slider del carousel  */
+ .slider {
+  max-width: auto;
+  height: 90px;
+  margin: auto;
+  position: relative;
+}
+
+.slide1,.slide2,.slide3{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: white no-repeat center;
+      background-size: cover;
+    animation:fade 8s infinite;
+   -webkit-animation:fade 8s infinite;
+} 
+.slide2 {
+      background: white no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+      background: white no-repeat center;
+      background-size: cover;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+
+/* --------------------------------------------FOOTER ------------------*/
+.legal-footer{
+  color:white;
+  font-family: "calibri";
+  font-style:normal;
+  font-weight:300;
+  font-size: 13px;
+  word-spacing: 1px;
+ }
+ /* Determina el espacio entre P y P horizontalmente */
+ .p-spacing {
+  margin-top: -15px;
+ }
+.italic {
+  font-style:italic;
+}
+/* Evita el salto de Linea */
+.en-linea{
+  display:inline;
+ }
+
+ /*Envia el componente Footer to Bottom*/
+ .footer-bottom{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+ }
+
+/*------------------------------------*/
+
+
+/* Acomoda los iconos del footer */
+.li-social {
+  display: inline-block;
+  padding: 5px;
+}
+/* Cambia el tamaño de los iconos del footer */
+.i-social {
+  font-size: 1.5rem;
+}
+
+/* ---------------------------PARAMETROS SARMIENTO   ------------------*/
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.avatar-profile  {
+  cursor:pointer;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.circle{ 
+  object-fit: cover;
+  /* min-height: 64px;
+  min-width: 64px;
+  ; */
+}
+
+/* Define el color del background */
+.sarmiento { 
+  background: rgb(5,131,73);
+}
+/* Define el color de los textos */
+.sarmiento-text { 
+  color: rgb(5,131,73);
+}
+
+/* Covierte una imagen en un file upload */
+.image-upload>input {
+  display: none;
+}
+
+.hover-hand{
+  cursor:pointer;
+}
+
+.bold {
+  /* color:black; */
+  font-weight:700;
+}
+
+.hovering-hand{
+  background-color: rgba(75, 73, 73, 0.8);
+  border-radius:4px;
+  color: rgb(255, 255, 255);
+  position: flex;
+  font-size:11px;
+  line-height:17px;
+  padding: 8px;
+  margin-top: 85px;
+  margin-left:865px;
+  z-index: 1;
+}
+
+.sarmiento-id{
+  margin-left: 25px;
+}
+
+/* Cambia el hover effect de los botones */
+ .btn:hover {
+  background-color:rgb(43, 43, 43);
+}
+
+/* Define el color de los Iconos a rojo */
+
+.red-icon{
+  color: #d50000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
